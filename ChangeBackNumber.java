@@ -1,4 +1,4 @@
-package com.pillar.kata;
+package com.numberfuntest;
 
 import java.util.Hashtable;
 
