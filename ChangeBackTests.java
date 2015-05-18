@@ -1,9 +1,8 @@
-package com.pillar.kataTest;
+package com.numberfuntest;
 
 import static org.junit.Assert.*;
 
-import com.pillar.kata.ChangeBackNumber;
-import com.pillar.kata.ChangeNumber;
+import com.numberfuntest.ChangeBackNumber;
 
 import org.junit.Test;
 
