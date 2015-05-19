@@ -1,11 +1,10 @@
-package com.numberfuntest;
+package com.pillar.kata;
 
 import java.util.Hashtable;
 
 public class ChangeBackNumber {
 
 	public static String convertFromRoman(String myRoman) {
-		
 		Integer myTotal = 0;		
 		Hashtable<String, Integer> txtValues = new Hashtable<String, Integer>();
 		txtValues.put("I", 1);
@@ -23,18 +22,12 @@ public class ChangeBackNumber {
 		String myCurrentChar = "";
 				
 		for (int i = 0; i < myRoman.length() ; i++) {
-
-			
 			myCurrentChar = stringToCharArray[i] + "";
-
 			if ( i == 0 ){
 				myLastChar = myCurrentChar;
 			}
-
 		    myLastValue = txtValues.get(myLastChar);
-			
 		    myCurrentValue = txtValues.get(myCurrentChar);
-			
 		    if (myLastValue < myCurrentValue) {
 		    	myTotal = myTotal + (myCurrentValue - myLastValue - myLastValue);
 		    }
@@ -43,10 +36,7 @@ public class ChangeBackNumber {
 		    	myTotal += myCurrentValue;
 		    }
 			myLastChar = myCurrentChar;
-			
 		}		
-		
 		return myTotal.toString();
 	}
-
 }
